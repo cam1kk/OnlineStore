@@ -5,26 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OnlineStore"
         mc:Ignorable="d"
-        Title="Online Store" Height="300" Width="300">
+        Title="Online Store" Height="350" Width="500">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="100"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="45"/>
-            <RowDefinition Height="45"/>
             <RowDefinition Height="60"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
-        
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#bedfff" Offset="0.1" />
+                <GradientStop Color="#3E9CF3" Offset="0.3" />
+                <GradientStop Color="#889bd3" Offset="0.7" />
+                <GradientStop Color="#424e74" Offset="1.0" />
+            </LinearGradientBrush>
+        </Grid.Background>
         <TextBlock Grid.Row="0" Text="OnlineStore" FontSize="35" 
                    HorizontalAlignment="Center" VerticalAlignment="Center"
-                   FontWeight="Bold" Foreground="Blue"/>
+                   FontWeight="Bold" Foreground="#ae8fb1">
+            <TextBlock.Effect>
+                <DropShadowEffect Color="Black" Direction="200" ShadowDepth="3" Opacity="0.6"/>
+            </TextBlock.Effect>
+        </TextBlock>
+        
         <Button Grid.Row="2" Height="25" Width="100" 
                 HorizontalAlignment="Center" VerticalAlignment="Center"
                 Content="Registration" FontWeight="Bold" FontSize="15"
-                Click="RegistrationButton_Click"/>
+                Click="RegistrationButton_Click"
+                Foreground="#6AA6E6"/>
         <Button Grid.Row="3" Height="25" Width="100" 
                 HorizontalAlignment="Center" VerticalAlignment="Center"
                 Content="Login" FontWeight="Bold" FontSize="15"
-                Click="LoginButton_Click"/>
+                Click="LoginButton_Click"
+                Foreground=""/>
     </Grid>
 </Window>
