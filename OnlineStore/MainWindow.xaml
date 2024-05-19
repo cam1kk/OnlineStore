@@ -34,11 +34,11 @@
                 HorizontalAlignment="Center" VerticalAlignment="Center"
                 Content="Registration" FontWeight="Bold" FontSize="15"
                 Click="RegistrationButton_Click"
-                Foreground="#6AA6E6"/>
+                Foreground="#ae8fb1" Background="#bedfff"/>
         <Button Grid.Row="3" Height="25" Width="100" 
                 HorizontalAlignment="Center" VerticalAlignment="Center"
                 Content="Login" FontWeight="Bold" FontSize="15"
                 Click="LoginButton_Click"
-                Foreground=""/>
+                Foreground="#ae8fb1" Background="#bedfff "/>
     </Grid>
 </Window>
